@@ -4,5 +4,11 @@
         "name": "why the long face?",
         "cn": "怎麼悶悶不樂?",
         "example": []
+    },
+    {
+        "id":2,
+        "name":"make hey while the sun shine",
+        "cn":"",
+        "example":[]
     }
 ]
