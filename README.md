@@ -17,9 +17,28 @@ $ linebot-env\Scripts\activate.bat
 $ pip install -r requirements.txt
 ```
 
-## Start app
+## How to develop at local
 ```bash
-$ export LINE_CHANNEL_SECRET=YOUR_LINE_CHANNEL_SECRET
-$ export LINE_CHANNEL_ACCESS_TOKEN=YOUR_LINE_CHANNEL_ACCESS_TOKEN
-$ python app.py
+# For MacOS or Linux
+$ export LINE_CHANNEL_SECRET=<xxx>
+$ export LINE_CHANNEL_ACCESS_TOKEN=ooo
+
+# For Windows
+$ set LINE_CHANNEL_SECRET=<xxx>
+$ set LINE_CHANNEL_ACCESS_TOKEN=<ooo>
+
+# Flask hot reload
+$ export FLASK_DEBUG=1
+$ set FLASK_DEBUG=1
+
+# Point to our entry file
+$ export FLASK_APP=flask_app.py
+$ set FLASK_APP=flask_app.py
+
+# Start our app
+$ flask run
+
+# Ngrok
+
+$ ngrok http <port number>
 ```
