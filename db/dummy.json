@@ -1,14 +1,326 @@
 [
-    {
-        "id": 1,
-        "name": "why the long face?",
-        "cn": "怎麼悶悶不樂?",
-        "example": []
-    },
-    {
-        "id":2,
-        "name":"make hey while the sun shine",
-        "cn":"",
-        "example":[]
-    }
+  {
+    "id": 1,
+    "phrase": "why the long face?",
+    "cn": "為何悶悶不樂?",
+    "example": []
+  },
+  {
+    "id": 2,
+    "phrase": "Make hay while the sun shines.",
+    "cn": "把握良機",
+    "example": []
+  },
+  {
+    "id": 3,
+    "phrase": "Learning is like rowing upstream; not to advance is to drop back.",
+    "cn": "學如逆水行舟,不進則退",
+    "example": []
+  },
+  {
+    "id": 4,
+    "phrase": "Build a castle in the air.",
+    "cn": "做白日夢",
+    "example": []
+  },
+  {
+    "id": 5,
+    "phrase": "A stitch in time saves nine.",
+    "cn": "及時行事則事半功倍",
+    "example": []
+  },
+  {
+    "id": 6,
+    "phrase": "Every minute makes a difference.",
+    "cn": "光陰如金",
+    "example": []
+  },
+  {
+    "id": 7,
+    "phrase": "Never put off until tomorrow what you can do today.",
+    "cn": "今日事今日畢",
+    "example": []
+  },
+  {
+    "id": 8,
+    "phrase": "As you sow, so shall you reap.",
+    "cn": "如何耕耘如何收穫",
+    "example": []
+  },
+  {
+    "id": 9,
+    "phrase": "Constant dropping wears away the stone.",
+    "cn": "滴水穿石/有志者事竟成",
+    "example": []
+  },
+  {
+    "id": 10,
+    "phrase": "Diligence can make up for lack of intelligence.",
+    "cn": "勤能補拙",
+    "example": []
+  },
+  {
+    "id": 11,
+    "phrase": "Let sleeping dogs lie.",
+    "cn": "別自找麻煩",
+    "example": []
+  },
+  {
+    "id": 12,
+    "phrase": "Let bydones be bygones.",
+    "cn": "既往不咎",
+    "example": []
+  },
+  {
+    "id": 13,
+    "phrase": "Learing without thinking is vain; thinking without learning is perilous.",
+    "cn": "學而不思則罔;思而不學則殆",
+    "example": []
+  },
+  {
+    "id": 14,
+    "phrase": "A blessing in disguise.",
+    "cn": "塞翁失馬焉知非福",
+    "example": []
+  },
+  {
+    "id": 15,
+    "phrase": "Actions speak louder than words.",
+    "cn": "坐而言不如起而行",
+    "example": []
+  },
+  {
+    "id": 16,
+    "phrase": "Look before you leap.",
+    "cn": "三思而後行",
+    "example": []
+  },
+  {
+    "id": 17,
+    "phrase": "To say is one thing; to do is another.",
+    "cn": "說是一回事,做是另一回事",
+    "example": []
+  },
+  {
+    "id": 18,
+    "phrase": "Easier said than done.",
+    "cn": "說比做更容易",
+    "example": []
+  },
+  {
+    "id": 19,
+    "phrase": "It takes two to make a quarrel.",
+    "cn": "孤掌難鳴",
+    "example": []
+  },
+  {
+    "id": 20,
+    "phrase": "Do not put the cat before the horse.",
+    "cn": "勿本末倒置",
+    "example": []
+  },
+  {
+    "id": 21,
+    "phrase": "Slow and steady wins the race.",
+    "cn": "穩扎穩打方有勝算",
+    "example": []
+  },
+  {
+    "id": 22,
+    "phrase": "Haste makes waste.",
+    "cn": "欲速則不達",
+    "example": []
+  },
+  {
+    "id": 23,
+    "phrase": "Where there is a will, there is a way.",
+    "cn": "有志者事竟成",
+    "example": []
+  },
+  {
+    "id": 24,
+    "phrase": "It is no use crying over spilt milk.",
+    "cn": "覆水難收",
+    "example": []
+  },
+  {
+    "id": 25,
+    "phrase": "It is never too late to mend.",
+    "cn": "亡羊補牢猶未晚矣",
+    "example": []
+  },
+  {
+    "id": 26,
+    "phrase": "He who makes no mistake makes nothing.",
+    "cn": "從錯誤中學習方能有所成就",
+    "example": []
+  },
+  {
+    "id": 27,
+    "phrase": "There is nothing either good or bad, but thinking makes it so.",
+    "cn": "事情無真正好壞,是想法造就其如此",
+    "example": []
+  },
+  {
+    "id": 28,
+    "phrase": "Do not meet trouble halfway.",
+    "cn": "勿庸人自擾",
+    "example": []
+  },
+  {
+    "id": 29,
+    "phrase": "make hey while the sun shine",
+    "cn": "把握良機",
+    "example": []
+  },
+  {
+    "id": 30,
+    "phrase": "Still waters run deep.",
+    "cn": "大智若愚",
+    "example": []
+  },
+  {
+    "id": 31,
+    "phrase": "It is more blessed to give than to receive.",
+    "cn": "施比受更有福",
+    "example": []
+  },
+  {
+    "id": 32,
+    "phrase": "What goes around comes around.",
+    "cn": "善有善報惡有惡報",
+    "example": []
+  },
+  {
+    "id": 33,
+    "phrase": "God never shuts one door but He opens another.",
+    "cn": "天無絕人之路",
+    "example": []
+  },
+  {
+    "id": 34,
+    "phrase": "A single spark can start a prairie fire.",
+    "cn": "星星之火足以燎原",
+    "example": []
+  },
+  {
+    "id": 35,
+    "phrase": "A friend in need is a friend indeed.",
+    "cn": "患難見真情",
+    "example": []
+  },
+  {
+    "id": 36,
+    "phrase": "A man is known by the company he keeps.",
+    "cn": "觀其友而知其人",
+    "example": []
+  },
+  {
+    "id": 37,
+    "phrase": "Prosperity makes friends; adversity tries them.",
+    "cn": "富足時候多朋友,患難時期見真情",
+    "example": []
+  },
+  {
+    "id": 38,
+    "phrase": "All that glitter is not gold.",
+    "cn": "事物不能只看外表",
+    "example": []
+  },
+  {
+    "id": 39,
+    "phrase": "Do to others as you would have others do to you.",
+    "cn": "己所不欲勿施於人",
+    "example": []
+  },
+  {
+    "id": 40,
+    "phrase": "To err is human,to forgive divine.",
+    "cn": "凡人皆有錯,寬恕則超凡神聖",
+    "example": []
+  },
+  {
+    "id": 41,
+    "phrase": "A contented mind is a perprtual feast.",
+    "cn": "知足常樂",
+    "example": []
+  },
+  {
+    "id": 42,
+    "phrase": "Turn a stumbling block into a stepping stone.",
+    "cn": "將危機化為轉機",
+    "example": []
+  },
+  {
+    "id": 43,
+    "phrase": "The fittest survive.",
+    "cn": "適者生存",
+    "example": []
+  },
+  {
+    "id": 44,
+    "phrase": "One swallow does not make a summer.",
+    "cn": "一燕不足以知夏/勿以偏概全",
+    "example": []
+  },
+  {
+    "id": 45,
+    "phrase": "Birds of a feather flock together.",
+    "cn": "物以類聚",
+    "example": []
+  },
+  {
+    "id": 46,
+    "phrase": "Nothing venture,nothing gain.",
+    "cn": "不努力就沒有收穫",
+    "example": []
+  },
+  {
+    "id": 47,
+    "phrase": "It never rains but it pours.",
+    "cn": "禍不單行",
+    "example": []
+  },
+  {
+    "id": 48,
+    "phrase": "Procrastination is the thief of time.",
+    "cn": "拖延是時間的小偷",
+    "example": []
+  },
+  {
+    "id": 49,
+    "phrase": "It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow.",
+    "cn": "勿言事難,夢想或能成真",
+    "example": []
+  },
+  {
+    "id": 50,
+    "phrase": "A journey of a thousand miles begins with a single step.",
+    "cn": "千里之行始於足下",
+    "example": []
+  },
+  {
+    "id": 51,
+    "phrase": "A rolling stone gathers no moss.",
+    "cn": "滾石不生苔/見異思遷者易無所成就",
+    "example": []
+  },
+  {
+    "id": 52,
+    "phrase": "Life is not about waiting for the storm to pass, but rather learning to dance in the rain.",
+    "cn": "人生不是在等待暴風雨經過,而是學會在雨中起舞/人生總會遇見許多困難,學會面對勿讓其阻礙了你",
+    "example": []
+  },
+  {
+    "id": 53,
+    "phrase": "Time and tide wait for no man. Both continue to go on and on, without ever stopping.",
+    "cn": "歲月不待人",
+    "example": []
+  },
+  {
+    "id": 54,
+    "phrase": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    "cn": "生命中許多失敗,往往是人們不知其放棄時離成功僅差一步之遙",
+    "example": []
+  }
 ]

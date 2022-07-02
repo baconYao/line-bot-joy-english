@@ -10,8 +10,10 @@
 #  License for the specific language governing permissions and limitations
 #  under the License.
 
+
 import os
 import sys
+import json
 from argparse import ArgumentParser
 
 from flask import Flask, request, abort
@@ -41,7 +43,12 @@ parser = WebhookParser(channel_secret)
 
 @app.route('/')
 def index():
-    return 'Sucess 部署'
+    with open('db/dummy.json', encoding='UTF-8') as f:
+        test = json.load(f)
+    test_id = test[0]['id']
+    print(test_id)
+    
+    return 'success佈署!!' + str(test_id)
 
 
 @app.route("/callback", methods=['POST'])
