@@ -1,21 +1,8 @@
-#  Licensed under the Apache License, Version 2.0 (the "License"); you may
-#  not use this file except in compliance with the License. You may obtain
-#  a copy of the License at
-#
-#       https://www.apache.org/licenses/LICENSE-2.0
-#
-#  Unless required by applicable law or agreed to in writing, software
-#  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-#  License for the specific language governing permissions and limitations
-#  under the License.
-
-
 import os
 import sys
-import json
 from argparse import ArgumentParser
 
+# 3rd
 from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookParser)
 from linebot.exceptions import (InvalidSignatureError)
@@ -25,7 +12,9 @@ from linebot.models import (
     TextSendMessage,
 )
 
-app = Flask(__name__)
+# our
+from src.cache.cache import cache, cache_config
+from src.db.db import init_db
 
 # get channel_secret and channel_access_token from your environment variable
 channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
@@ -40,15 +29,16 @@ if channel_access_token is None:
 line_bot_api = LineBotApi(channel_access_token)
 parser = WebhookParser(channel_secret)
 
+app = Flask(__name__)
+# Init cache
+cache.init_app(app, config=cache_config)
+# Init db
+init_db()
+
 
 @app.route('/')
 def index():
-    with open('db/dummy.json', encoding='UTF-8') as f:
-        test = json.load(f)
-    test_id = test[0]['id']
-    print(test_id)
-    
-    return 'success佈署!!' + str(test_id)
+    return 'success佈署!!'
 
 
 @app.route("/callback", methods=['POST'])
@@ -58,7 +48,6 @@ def callback():
     # get request body as text
     body = request.get_data(as_text=True)
     app.logger.info("Request body: " + body)
-
     # parse webhook body
     try:
         events = parser.parse(body, signature)
