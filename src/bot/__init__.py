@@ -13,6 +13,9 @@ from linebot.models import (
     TextSendMessage,
 )
 
+# our
+
+
 # get channel_secret and channel_access_token from your environment variable
 channel_secret = getenv('LINE_CHANNEL_SECRET', None)
 channel_access_token = getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
@@ -49,7 +52,12 @@ def callback():
         if not isinstance(event.message, TextMessage):
             continue
 
+        try_text = '排版斷航測試：\n\t * 看看是否縮排\n  * gogo去哪裡'
+        # line_bot_api.reply_message(event.reply_token,
+        #                            TextSendMessage(text=event.message.text))
         line_bot_api.reply_message(event.reply_token,
-                                   TextSendMessage(text=event.message.text))
+                                   TextSendMessage(text=try_text))
+
+        # line_bot_api.push_message('U84256f739aaebb3330285947695f19ef', TextSendMessage(text='Hello World!'))
 
     return 'OK'
