@@ -3,6 +3,7 @@
 import os
 import sys
 
+
 from linebot import (
     LineBotApi,
 )
@@ -12,10 +13,14 @@ from linebot.models import (
     RichMenuArea,
     RichMenuSize,
     RichMenuBounds,
-    URIAction
+    URIAction,
+    MessageAction
 )
 from linebot.models.actions import RichMenuSwitchAction
 from linebot.models.rich_menu import RichMenuAlias
+
+# our function : write richmenu_id into json file
+from .store_json import write_richId
 
 channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
 if channel_access_token is None:
@@ -43,8 +48,8 @@ def rich_menu_object_a_json():
                     "height": 1686
                 },
                 "action": {
-                    "type": "uri",
-                    "uri": "https://www.line-community.me/"
+                    "type": "message",
+                    "text": "rc"
                 }
             },
             {
@@ -106,6 +111,11 @@ def rich_menu_object_b_json():
 def create_action(action):
     if action['type'] == 'uri':
         return URIAction(type=action['type'], uri=action.get('uri'))
+    elif action['type'] == 'message':
+        return MessageAction(
+            type=action['type'],
+            text=action.get('text')
+        )
     else:
         return RichMenuSwitchAction(
             type=action['type'],
@@ -190,6 +200,11 @@ def main():
     )
     line_bot_api.create_rich_menu_alias(alias_b)
     print('success')
+
+    # write richmenu A&B's id into json file
+    richmenuId_info = {"richmenu_id_a": rich_menu_a_id, "richmenu_id_b": rich_menu_b_id}
+    write_richId(richmenuId_info)
+    print("successfully write richmenu id into json")
 
 
 main()

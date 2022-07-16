@@ -1,0 +1,19 @@
+[
+  { "richmenu_id_a": "default", "richmenu_id_b": "default" },
+  {
+    "richmenu_id_a": "richmenu-63d0a3c658758b3037544450d89d0dcd",
+    "richmenu_id_b": "richmenu-9659a932c9a5e0e72e9e9e75916849c2"
+  },
+  {
+    "richmenu_id_a": "richmenu-b1472422de3d37897a5722c13b7c11e7",
+    "richmenu_id_b": "richmenu-928bd6f50a43984104a1848a9001d12f"
+  },
+  {
+    "richmenu_id_a": "richmenu-e29a3a9bcca19abecb27031eb48419d2",
+    "richmenu_id_b": "richmenu-62dd26d307f4d655d209ce0a6b46cc2f"
+  },
+  {
+    "richmenu_id_a": "richmenu-11ba29ca92e856594cdadd5ac8e731d2",
+    "richmenu_id_b": "richmenu-d92063d71ef2ba666b54e286945431c9"
+  }
+]
