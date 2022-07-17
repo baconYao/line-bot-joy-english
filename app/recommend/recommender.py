@@ -2,13 +2,13 @@
 import random
 
 # our
-from src.cache.cache import cache
+from app.cache.cache import cache, CACHE_ALL_PHRASE
 
 
 def get_daily_recommended_phrases():
     ''' Get the daily recommended phrases
     '''
-    phrases = cache.get('all_english_phrases')
+    phrases = cache.get(CACHE_ALL_PHRASE)
     n = len(phrases)
     pps = []
     for i in range(3):

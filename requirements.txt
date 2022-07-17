@@ -2,3 +2,5 @@ line-bot-sdk
 flask
 gunicorn
 Flask-Caching==2.0.0
+Flask-PyMongo==2.3.0
+pymongo[srv]

@@ -4,7 +4,7 @@ from linebot.models import (
 
 # our
 from ..common import line_bot_api
-from src.recommend.recommender import get_daily_recommended_phrases
+from app.recommend.recommender import get_daily_recommended_phrases
 
 
 def text_message_dispatcher(event):

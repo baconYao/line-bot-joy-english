@@ -32,8 +32,12 @@ $ export FLASK_DEBUG=1
 $ set FLASK_DEBUG=1
 
 # Point to our entry file
-$ export FLASK_APP=flask_app.py
-$ set FLASK_APP=flask_app.py
+$ export FLASK_APP=app
+$ set FLASK_APP=app
+
+# Set the URI of Database
+$ export DB_URI=<xxx>
+$ set DB_URI=<xxx>
 
 # Start our app
 $ flask run
