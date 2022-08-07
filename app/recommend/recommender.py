@@ -1,5 +1,5 @@
 # system
-# import random
+import random
 # from time import timezone
 from apscheduler.schedulers.background import BackgroundScheduler
 # from datetime import datetime
@@ -8,17 +8,20 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from app.cache.cache import cache, CACHE_DAILY_PHRASE, get_all_phrases_from_cache
 
 scheduler = BackgroundScheduler(timezone="Asia/Taipei")
-cache_id_counter = 0
+cache_id_pointer = 0
 
 
 def update_cache_id_counter(all_phrases_length):
     '''Periodically refresh daily_phrases_cache's id counter
     '''
-    global cache_id_counter
+    global cache_id_pointer
+    cache_id_pointer = random.randrange(0, all_phrases_length-3)
+    '''global cache_id_pointer
     if cache_id_counter < (all_phrases_length-3):
         cache_id_counter += 3
     else:
         cache_id_counter = 0
+    '''
 
 
 def run_scheduler():
@@ -34,9 +37,9 @@ def all_to_daily_cache():
     '''
     phrases = get_all_phrases_from_cache()
 
-    global cache_id_counter
+    global cache_id_pointer
     daily_phrases = []
-    for i in range(cache_id_counter, cache_id_counter+3):
+    for i in range(cache_id_pointer, cache_id_pointer+3):
         daily_phrases.append(phrases[i])
     cache.set(CACHE_DAILY_PHRASE, daily_phrases)
 

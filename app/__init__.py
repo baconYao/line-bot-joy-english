@@ -22,7 +22,7 @@ def create_app(test_config=None):
     # Init cache
     # cache.init_app(app, config=cache_config)
     init_cache(app)
-    cache_all_phrases()
+    cache_all_phrases(app)
     run_scheduler()
 
     @app.route('/')

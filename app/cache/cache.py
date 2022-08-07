@@ -55,13 +55,16 @@ def retrieve_data_from_cache(key=''):
     return cache.get(key)
 
 
-def cache_all_phrases():
+def cache_all_phrases(app):
     ''' Be used cache all phrases
     '''
-    logger.info('Caching all phrases...')
+    app.logger.info('Caching all phrases...')
     # Get phrases from DB
     phrases = get_all_phrases_from_db()
     inject_cache(CACHE_ALL_PHRASE, phrases)
+    '''for i in range(0, len(cache.get(CACHE_ALL_PHRASE))):
+        app.logger.info(phrases[i]["id"])
+    '''
 
 
 def get_all_phrases_from_cache():
